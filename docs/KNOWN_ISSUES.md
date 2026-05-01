@@ -23,7 +23,7 @@ Stage advancement stop rule:
 | --- | ---: | ---: | ---: | ---: |
 | P0 | 0 | 0 | 0 | 0 |
 | P1 | 2 | 0 | 0 | 0 |
-| P2 | 1 | 0 | 0 | 0 |
+| P2 | 0 | 0 | 0 | 1 |
 | P3 | 0 | 0 | 0 | 0 |
 
 ## ISSUE-L1-001: Live runtime imports research scorer and config
@@ -48,7 +48,7 @@ Stage 10 must reject `research_only` and `observe_only` artifacts as live inputs
 
 ### Resolution notes
 
-Open as of 2026-05-01.
+Stage 2 added artifact, promotion, and boundary contracts. Preflight enforcement remains open for Stage 10.
 
 ## ISSUE-L1-002: Operator UI exposes research jobs beside live controls
 
@@ -72,14 +72,14 @@ Stage 10 must reject research jobs in live mode and ensure operator UI routes ca
 
 ### Resolution notes
 
-Open as of 2026-05-01.
+Stage 2 documented command ownership in `docs/contracts/boundary_contract.md`. Live-mode rejection remains open for Stage 10.
 
 ## ISSUE-L1-003: TradingView parity material remains active in live branch
 
 Severity: P2
 Stage discovered: Stage 1 - Repo cartography
 Owner: Documentation Agent
-Status: open
+Status: accepted_debt
 Paths affected: `src/tradingbot/*`, `docs/lc_*.pine`, `docs/PARITY_WORKFLOW.md`, `docs/UI_VALIDATION.md`, `references/**`, `examples/btc_lc_*.yaml`, `tests/fixtures/tv_lc/**`
 
 ### Problem
@@ -96,7 +96,7 @@ Stage 2 documentation should mark these as legacy/reference. Later cleanup may m
 
 ### Resolution notes
 
-Open as of 2026-05-01.
+Stage 2 documented legacy status in `docs/contracts/boundary_contract.md` and `docs/repo_cartography/TRADINGVIEW_ARCHIVE_MAP.md`. Physical archive movement is accepted debt until a later scoped work packet.
 
 ## Issue template
 
